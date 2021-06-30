@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-family: "Kumbh Sans" sans-serif;
+  color: hsl(240, 6%, 50%);
+}
+p {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0.3rem;
+  color: hsl(237, 12%, 33%);
+}
+
+img {
+  width: 100%;
+}
+.container {
+  margin: 3rem 3rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.woman-img {
+  max-width: 20rem;
+  padding: 0.4rem;
+}
+
+.accordion-container {
+  width: 30rem;
+}
+.accordion {
+  background-color: white;
+  color: hsl(238, 29%, 16%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  outline: none;
+  transition: 0.3s;
+  border: none;
+  border-bottom: 1px hsl(240, 5%, 91%) solid;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.accordion:after {
+  content: url(images/icon-arrow-down.svg); /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 660px) {
+  .woman-img {
+    max-width: 30rem;
+  }
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+p {
+  color: hsl(192, 100%, 9%);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2rem;
+  padding: 2%;
+}
+
+h2,
+h3 {
+  font-family: "Overpass", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+.logo {
+  max-width: 10rem;
+  height: auto;
+}
+
+.btn-header {
+  background: inherit;
+  padding: 0.5rem;
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 5rem;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-pink {
+  border: 1px solid;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  padding: 1rem;
+  border-radius: 3rem;
+  outline: transparent;
+}
+
+.btn-pink:hover {
+  background-color: hsl(0, 100%, 63%);
+}
+
+.mock-ups {
+  margin-bottom: 7vh;
+}
+
+.responsive {
+  height: auto;
+  max-width: 50rem;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.img-container {
+  display: block;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.community {
+  background-image: url("images/icon-communities.svg");
+  background-repeat: no-repeat;
+}
+
+.message {
+  background-image: url("images/icon-messages.svg");
+  background-repeat: no-repeat;
+}
+.h2-stats {
+  color: hsl(192, 100%, 9%);
+  font-size: 2rem;
+}
+
+.para-stats {
+  font-size: 1.2rem;
+  color: hsl(214, 6%, 75%);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  text-align: center;
+}
+.features-item {
+  width: fit-content;
+  max-width: 100%;
+  width: 550px;
+  height: auto;
+  margin-bottom: 5vh;
+}
+
+.h3-features {
+  font-size: 2rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.outro {
+  text-align: center;
+  background: url("images/bg-section-bottom-desktop-2.svg");
+  margin-bottom: 3vh;
+}
+
+.h3-desc {
+  font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(192, 100%, 9%);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 1rem;
+}
+.flex-items {
+  width: 35rem;
+}
+
+.h3-footer {
+  font-size: 2rem;
+  color: white;
+}
+
+.para-footer {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.email {
+  width: 100%;
+  max-width: 20rem;
+  height: 4rem;
+  margin-bottom: 3vh;
+}
+
+.btn-footer {
+  background: hsl(322, 100%, 66%);
+  padding: 1rem;
+  display: block;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 800;
+  height: fit-content;
+  font-family: "Overpass", sans-serif;
+  border-color: transparent;
+  outline: transparent;
+}
+
+@media (min-width: 789px) {
+  .features-item {
+    text-align: left;
+  }
+}
