@@ -121,6 +121,9 @@ img {
   background: url("/images/bg-section-top-desktop-2.svg") no-repeat top;
   background-size: cover;
 }
+.two {
+  flex-wrap: wrap;
+}
 .features-item {
   width: fit-content;
   max-width: 100%;
